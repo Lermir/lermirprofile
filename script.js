@@ -1,4 +1,4 @@
-// Smooth Scrolling
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -14,7 +14,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-  // Simple Scroll Reveal
   window.addEventListener('scroll', () => {
     document.querySelectorAll('.project-card').forEach((card, index) => {
       const cardPosition = card.getBoundingClientRect().top;
@@ -28,29 +27,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-
-// Fungsi untuk scroll kiri
 scrollLeftButton.addEventListener('click', () => {
-  scrollAmount -= 320; // Menentukan berapa banyak yang digeser
+  scrollAmount -= 320;
   if (scrollAmount < 0) scrollAmount = 0; // Tidak bisa scroll lebih jauh ke kiri
   projectGrid.style.transform = `translateX(-${scrollAmount}px)`;
 });
 
-// Fungsi untuk scroll kanan
 scrollRightButton.addEventListener('click', () => {
-  scrollAmount += 320; // Menentukan berapa banyak yang digeser
+  scrollAmount += 320;
   if (scrollAmount > projectGrid.scrollWidth - projectGrid.clientWidth) {
-    scrollAmount = projectGrid.scrollWidth - projectGrid.clientWidth; // Membatasi scroll ke kanan
+    scrollAmount = projectGrid.scrollWidth - projectGrid.clientWidth;
   }
   projectGrid.style.transform = `translateX(-${scrollAmount}px)`;
 });
 function openModal(projectId) {
-  // Set modal content based on project ID
   const modalTitle = document.getElementById('modal-title');
   const modalDescription = document.getElementById('modal-description');
   const modalImage = document.getElementById('modal-image');
 
-  // Dummy content for each project with image, title, and description
   const projectData = {
       1: {
           title: "Membuat Web Company Profile", 
@@ -84,28 +78,23 @@ function openModal(projectId) {
   modalDescription.textContent = project.description;
   modalImage.src = project.image;
 
-  // Display the modal
   const modal = document.getElementById('projectModal');
   modal.style.display = "block";
 
-  // Apply blur to the background and disable scrolling
-  document.body.style.overflow = "hidden"; // Disable scrolling
+  document.body.style.overflow = "hidden";
   const projectsSection = document.getElementById('projects');
-  projectsSection.style.filter = "blur(5px)"; // Apply blur effect
+  projectsSection.style.filter = "blur(5px)";
 }
 
 function closeModal() {
-  // Hide the modal
   const modal = document.getElementById('projectModal');
   modal.style.display = "none";
 
-  // Remove blur effect and re-enable scrolling
-  document.body.style.overflow = "auto"; // Re-enable scrolling
+  document.body.style.overflow = "auto"; 
   const projectsSection = document.getElementById('projects');
-  projectsSection.style.filter = "none"; // Remove blur effect
+  projectsSection.style.filter = "none";
 }
 
-// Close the modal when clicking outside of it
 window.onclick = function(event) {
   const modal = document.getElementById('projectModal');
   if (event.target === modal) {
