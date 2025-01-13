@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A creative portfolio showcasing works and projects">
+  <title>Lermir</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+</head>
+
+  <header class="site-header">
+    <div class="logo">
+        <img src="img/mier.png" alt="Lermir Logo">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about" data-key="about">About</a></li>
+        <li><a href="#projects" data-key="projects">Projects</a></li>
+        <li><a href="#contact" data-key="contact">Contact</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 data-key="hero-title">Hallo!,saya <span>Lermir</span></h1>
+      <h6 data-key="hero-desc">Programmer & Designer</h6>
+      <a href="#projects" class="cta-button" data-key="cta-button">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 data-key="about-title">About Me</h2>
+    <p data-key="about-desc">halo!! nama asli saya Riski Angga atau bisa dipanggil Lermir, saya lahir di Tangerang pada tanggal 23 November 2005, saat ini saya tinggal di Tangerang Selatan. Tepatnya di Alam Sutera, saya sangat ingin menjadi seorang programmer, sesekali saya membuat projek dan hasilnya ada di bawah</p>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2 data-key="projects-title">My Projects</h2>
+</section>
+
+<section id="projects" class="projects">
+  <div class="project-slider">
+      <div class="project-grid">
+          <div class="project-card">
+              <img src="img/company profile.png" alt="Project 1">
+              <h3 data-key="project1-title">Membuat Web Company Profile</h3>
+              <p></p>
+              <a href="javascript:void(0)" class="project-link" data-key="project1-link" onclick="openModal(1)">View Details</a>
+          </div>
+          <div class="project-card">
+              <img src="img/desain.png" alt="Project 2">
+              <h3 data-key="project2-title">Membuat Desain Menggunakan Adobe</h3>
+              <p></p>
+              <a href="javascript:void(0)" class="project-link" data-key="project2-link" onclick="openModal(2)">View Details</a>
+          </div>
+          <div class="project-card">
+              <img src="img/scanning.png" alt="Project 3">
+              <h3 data-key="project3-title">Membuat Code Scanning Dalam Foto</h3>
+              <p></p>
+              <a href="javascript:void(0)" class="project-link" data-key="project3-link" onclick="openModal(3)">View Details</a>
+          </div>
+          <div class="project-card">
+              <img src="img/music.png" alt="Project 4">
+              <h3 data-key="project4-title">Membuat Script Convert MP4-MP3</h3>
+              <p></p>
+              <a href="javascript:void(0)" class="project-link" data-key="project4-link" onclick="openModal(4)">View Details</a>
+          </div>
+          <div class="project-card">
+              <img src="img/restoran php.png" alt="Project 5">
+              <h3 data-key="project5-title">Membuat Web Restoran PHP</h3>
+              <p></p>
+              <a href="javascript:void(0)" class="project-link" data-key="project5-link" onclick="openModal(5)">View Details</a>
+          </div>
+      </div>
+  </div>
+  <button class="scroll-left" id="scroll-left">&#8592;</button>
+  <button class="scroll-right" id="scroll-right">&#8594;</button>
+
+  <!-- Modal Structure -->
+  <div id="projectModal" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <img id="modal-image" src="" alt="Project Image" style="width:100%; height:auto;">
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+      </div>
+  </div>
+</section>
+
+  <!-- contact -->
+  <section id="contact" class="contact">
+    <h3>untuk lebih lengkapnya silahkan</h3>
+    <h2 data-key="contact-title">Hubungi Kami</h2>
+    
+    <!-- My medsos -->
+    <div class="social-links">
+        <a href="https://discord.com/users/1055331498271719464" target="_blank" class="social-icon discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
+        <a href="https://www.instagram.com/ryzau_23" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://github.com/lermir" target="_blank" class="social-icon github">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <h6 data-key="footer">&copy; 2025 Lermir is goat. All Rights Reserved.</h6>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
