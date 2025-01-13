@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -13,23 +13,23 @@ body {
   }
   
   a {
-    display: inline-block; /* Mengubah elemen <a> menjadi kotak */
+    display: inline-block; 
     text-decoration: none;
     color: #1900ff;
-    background-color: #fff; /* Warna latar belakang untuk kotak */
-    padding: 10px 20px; /* Memberikan ruang di dalam kotak */
-    border: 2px solid #1921ff; /* Menambahkan garis tepi */
-    border-radius: 8px; /* Membuat sudut kotak melengkung */
+    background-color: #fff; 
+    padding: 10px 20px; 
+    border: 2px solid #1921ff; 
+    border-radius: 8px; 
     font-weight: bold;
-    transition: all 0.3s ease; /* Animasi halus untuk hover */
+    transition: all 0.3s ease;
   }
   
   a:hover {
-    color: #fff; /* Warna teks saat hover */
-    background-color: #2c2099; /* Warna latar belakang saat hover */
-    border-color: #e2e2e2; /* Mengubah warna garis tepi saat hover */
-    transform: scale(1.1); /* Membuat efek zoom */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+    color: #fff;
+    background-color: #2c2099; 
+    border-color: #e2e2e2; 
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   
@@ -45,7 +45,6 @@ body {
     margin: auto;
   }
   
-  /* Header */
   .site-header {
     display: flex;
     justify-content: space-between;
@@ -59,9 +58,9 @@ body {
 }
 
 .site-header .logo img {
-    height: 60px; /* Menyesuaikan tinggi gambar logo */
-    width: auto;  /* Menjaga proporsi gambar */
-    max-height: 70px; /* Maksimum tinggi logo agar tidak terlalu besar */
+    height: 60px; 
+    width: auto; 
+    max-height: 70px;
 }
 
   
@@ -80,7 +79,6 @@ body {
     font-weight: bold;
   }
   
-  /* Hero Section */
   .hero {
     display: flex;
     align-items: center;
@@ -91,8 +89,7 @@ body {
     min-height: 60vh;
     position: relative;
   }
-  
-  /* Tambahkan overlay untuk efek gelap */
+
   .hero::before {
     content: '';
     position: absolute;
@@ -100,13 +97,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Transparansi overlay */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
   
   .hero-content {
     position: relative;
-    z-index: 2; /* Agar konten berada di atas overlay */
+    z-index: 2;
   }
   
   .hero-content {
@@ -135,7 +132,6 @@ body {
     color: #fff;
   }
   
-  /* Animasi Bounce */
   @keyframes bounce {
     0% {
       transform: translateY(0);
@@ -183,7 +179,6 @@ body {
     background: #0056b3;
   }
   
-  /* Footer */
   .site-footer {
     background: #333;
     color: #fff;
@@ -191,7 +186,6 @@ body {
     padding: 1rem 0;
   }
   
-  /* Mengatur font global */
 body {
     font-family: 'Poppins', sans-serif; /* Font modern dan bersih */
     margin: 0;
@@ -201,38 +195,36 @@ body {
     color: #333;
   }
   
-  /* Desain tombol */
   .language-switcher .language-btn {
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #fff; /* Warna teks putih */
-    background-color: #007BFF; /* Warna latar belakang biru cerah */
+    color: #fff; 
+    background-color: #007BFF;
     padding: 12px 25px;
-    border: 2px solid #0056b3; /* Border warna biru lebih gelap */
-    border-radius: 30px; /* Membuat sudut tombol melengkung */
+    border: 2px solid #0056b3; 
+    border-radius: 30px;
     font-weight: bold;
     font-size: 1rem;
-    letter-spacing: 1px; /* Jarak antar huruf untuk tampilan lebih rapi */
-    text-transform: uppercase; /* Mengubah semua huruf menjadi kapital */
+    letter-spacing: 1px; 
+    text-transform: uppercase;
     transition: all 0.3s ease;
     cursor: pointer;
   }
   
   
-  /* Style untuk konten */
   section {
     text-align: center;
     padding: 50px 20px;
   }
   
   h1, p {
-    font-family: 'Roboto', sans-serif; /* Font sans-serif yang mudah dibaca */
+    font-family: 'Roboto', sans-serif; 
     color: #ffffff;
   }
   
   h1 {
-    font-size: 2.5rem; /* Ukuran font judul */
+    font-size: 2.5rem; 
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -254,7 +246,6 @@ body {
     color: #ffffff;
   }
   
-  /* Desain tombol di dalam konten */
   #content {
     margin-top: 50px;
   }
@@ -305,27 +296,26 @@ body {
 }
 
 .project-link {
-    display: inline-block; /* Mengubah elemen <a> menjadi kotak */
+    display: inline-block; 
     text-decoration: none;
     color: #1900ff;
-    background-color: #fff; /* Warna latar belakang untuk kotak */
-    padding: 10px 20px; /* Memberikan ruang di dalam kotak */
-    border: 2px solid #1921ff; /* Menambahkan garis tepi */
-    border-radius: 8px; /* Membuat sudut kotak melengkung */
+    background-color: #fff;
+    padding: 10px 20px; 
+    border: 2px solid #1921ff; 
+    border-radius: 8px;
     font-weight: bold;
-    transition: all 0.3s ease; /* Animasi halus untuk hover */
+    transition: all 0.3s ease; 
   }
   
   .project-link:hover {
-    color: #fff; /* Warna teks saat hover */
-    background-color: #2c2099; /* Warna latar belakang saat hover */
-    border-color: #e2e2e2; /* Mengubah warna garis tepi saat hover */
-    transform: scale(1.1); /* Membuat efek zoom */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+    color: #fff;
+    background-color: #2c2099;
+    border-color: #e2e2e2;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
 
-/* Tombol untuk scroll kiri dan kanan */
 .scroll-left, .scroll-right {
   position: absolute;
   top: 50%;
@@ -440,7 +430,6 @@ body {
   }
   
 
-    /* Modal styling */
     .modal {
       display: none;
       position: fixed;
